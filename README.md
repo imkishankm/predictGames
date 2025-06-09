@@ -1,8 +1,70 @@
-This is a new [**React Native**](https://reactnative.dev) project, bootstrapped using [`@react-native-community/cli`](https://github.com/react-native-community/cli).
+# 🏈 Sports Prediction App
+
+A simple and streamlined mobile application that allows sports fans to view upcoming and live games, check odds, and make basic predictions. Built using React Native.
+
+## ✨ Features
+
+### 1. Games Dashboard
+- View a list of upcoming, live, and completed games.
+- Quick filtering by game status.
+- Displays team matchups and betting odds.
+
+### 2. Game Detail Screen
+- Detailed view of selected game.
+- Shows team details and odds.
+- Simple prediction interface (pick winner).
+
+### 3. User Profile
+- View prediction history.
+- Tracks win/loss record and virtual balance.
+
+---
+
+## 🛠️ Tech Stack
+
+- **React Native**
+- **React Navigation**
+- **JavaScript**
+- **react-native-reanimated**
+- **Mock data (can be replaced with real API/backend)**
+
+
+---
+
+## ⚙️ Performance Optimizations -
+
+To ensure smooth performance with large datasets (10,000+ items), the following optimizations are implemented:
+
+- useCallback: Prevents unnecessary re-renders of components.
+
+- React.memo: Optimizes functional components by avoiding re-renders when props haven't changed.
+
+- Modular and Maintainable Code: Clean separation of logic and UI for scalability.
+
+- Used react reanimated library for smooth animation
+
+- Used FlatList to render large data for better user experiance.
+
+
+## 📲 Installation
+
+1. Clone the repository:
+
+```bash
+git clone https://github.com/yourusername/sports-prediction-app.git
+cd sports-prediction-app
 
 # Getting Started
 
-> **Note**: Make sure you have completed the [Set Up Your Environment](https://reactnative.dev/docs/set-up-your-environment) guide before proceeding.
+## Step 1: Start Metro
+
+```sh
+# Using npm
+npm install
+
+# OR using Yarn
+yarn
+```
 
 ## Step 1: Start Metro
 
@@ -60,38 +122,3 @@ yarn ios
 
 If everything is set up correctly, you should see your new app running in the Android Emulator, iOS Simulator, or your connected device.
 
-This is one way to run your app — you can also build it directly from Android Studio or Xcode.
-
-## Step 3: Modify your app
-
-Now that you have successfully run the app, let's make changes!
-
-Open `App.tsx` in your text editor of choice and make some changes. When you save, your app will automatically update and reflect these changes — this is powered by [Fast Refresh](https://reactnative.dev/docs/fast-refresh).
-
-When you want to forcefully reload, for example to reset the state of your app, you can perform a full reload:
-
-- **Android**: Press the <kbd>R</kbd> key twice or select **"Reload"** from the **Dev Menu**, accessed via <kbd>Ctrl</kbd> + <kbd>M</kbd> (Windows/Linux) or <kbd>Cmd ⌘</kbd> + <kbd>M</kbd> (macOS).
-- **iOS**: Press <kbd>R</kbd> in iOS Simulator.
-
-## Congratulations! :tada:
-
-You've successfully run and modified your React Native App. :partying_face:
-
-### Now what?
-
-- If you want to add this new React Native code to an existing application, check out the [Integration guide](https://reactnative.dev/docs/integration-with-existing-apps).
-- If you're curious to learn more about React Native, check out the [docs](https://reactnative.dev/docs/getting-started).
-
-# Troubleshooting
-
-If you're having issues getting the above steps to work, see the [Troubleshooting](https://reactnative.dev/docs/troubleshooting) page.
-
-# Learn More
-
-To learn more about React Native, take a look at the following resources:
-
-- [React Native Website](https://reactnative.dev) - learn more about React Native.
-- [Getting Started](https://reactnative.dev/docs/environment-setup) - an **overview** of React Native and how setup your environment.
-- [Learn the Basics](https://reactnative.dev/docs/getting-started) - a **guided tour** of the React Native **basics**.
-- [Blog](https://reactnative.dev/blog) - read the latest official React Native **Blog** posts.
-- [`@facebook/react-native`](https://github.com/facebook/react-native) - the Open Source; GitHub **repository** for React Native.
