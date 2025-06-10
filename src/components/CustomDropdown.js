@@ -22,13 +22,13 @@ const CustomDropdown = ({
   return (
     <View>
       <Pressable style={styles.container} onPress={dropDownPress}>
-        <Text>{defaultValue?.label}</Text>
+        <Text style={styles.textStyle}>{defaultValue?.label}</Text>
          <Icon name='chevron-down' size={16}/>
       </Pressable>
       {showOptions && (
         <View style={styles.optionsContainer}>
           {options?.map(option => (
-            <Pressable onPress={()=>optionPress(option)}>
+            <Pressable key={option?.value} onPress={()=>optionPress(option)}>
               <Text style={styles.labelStyle}>{option.label}</Text>
             </Pressable>
           ))}
@@ -65,4 +65,7 @@ const styles = StyleSheet.create({
     marginTop: 8,
     fontSize: 16,
   },
+  textStyle:{
+    marginRight:4
+  }
 });

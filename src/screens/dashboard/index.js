@@ -1,7 +1,7 @@
 import React, {useCallback, useContext, useState} from 'react';
 import {View, Text, FlatList, StyleSheet} from 'react-native';
 import {useNavigation} from '@react-navigation/native';
-import GameCard from '../gameDetails/components/GameCard';
+import GameCard from './components/GameCard';
 import {GamesContext} from '../../utils/contexts';
 import Header from '../../components/Header';
 import CustomDropdown from '../../components/CustomDropdown';
@@ -17,7 +17,7 @@ const DashboardScreen = () => {
   });
 
   const _renderItem = ({item}) => {
-    return <GameCard game={item} onPress={() => navigateTo(item)} />;
+    return <GameCard key={item?.id} game={item} onPress={() => navigateTo(item)} />;
   };
 
   const filteredGames =
